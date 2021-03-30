@@ -1,0 +1,58 @@
+*{
+  box-sizing: border-box;
+}
+body{
+  margin:0px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.row{
+  position: relative;
+  width: auto;
+margin: 30px;
+}
+
+.image{
+  display: block;
+  width: 25%;
+  height:auto;
+}
+.overlay{
+  opacity:0;
+  position: absolute;
+  top: 0;
+  right:0;
+  left:0;
+  bottom:0;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  
+  transition: .5s ease;
+}
+.overimg{
+  position: absolute;
+  top:50%;
+  left:50%;
+width: 25%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+
+  width: 50%;
+}
+.row:hover .overlay{
+opacity: 1;
+}
+
+
+
+
+
+
+
+
+
+
+
+

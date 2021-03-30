@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            .header{
+                grid-area: header;
+                background-color: #bbb;
+                padding:20px;
+                text-align: center;
+            }
+            .grid-container{
+                display:grid;
+                grid-template-areas: 'header header header header header header' 
+                'left  middle middle middle middle right '
+                'footer footer footer footer footer footer';
+                
+                grid-gap: 5px ;
+                padding:10px;
+            
+            }
+            .left,.middle,.right{
+padding:2px;
+grid-gap: 5px;
+            }
+              
+                .left{
+                    grid-area: left;
+                    background-color: #bbbbbb;
+                    color: black;
+                    font-size: 20px;
+                    text-align: center;
+                }
+            .middle{
+                grid-area: middle;
+text-align: center;
+background-color: #bbbbbb;
+            }
+            .right{
+                grid-area: right;
+                text-align: center;
+             
+                background-color: #bbbbbb;
+             font-size: 20px;
+            }
+            .footer{
+                grid-area:footer;
+                text-align: center;
+                background-color: #bbbbbb;
+                padding: 10px;
+                margin-top: 10px;
+            }
+            button{
+                border-radius: 15%;
+                color: black;
+                width: auto;
+                background-color: #bbbbbb;
+            }
+            
+            .show a p{display:none;}
+.show a:hover p {
+    display:block;
+}
+        </style>
+    </head>
+    <body>
+        <div class ="grid-container">
+            <div class="header">
+                <a href="#">Home</a>
+                <a href="#">Home</a>
+                <a href="#">Home</a>
+                <a href="#">Home</a>
+            </div>
+            <div class= "middle">
+     <img src ="workstation2/laptop.jpg" width="280" height="200" ><br>
+                <button type="button"> <a href = "bbc.com">$100</a></button>
+            </div>
+            <div class= "left">
+                <img src="workstation2/laptop.jpg" width="280" height="200">
+            </div>
+            <div class= "right">
+<img src="workstation2/laptop.jpg" width="280" height="200">
+            </div>
+            <div class= "footer">Footer</div>
+        </div>
+        <div class ="show">
+           
+           
+            <a href =""><img src="workstation2/laptop.jpg" width="280" height="200">
+            <p>add to cart</p></a>
+    
+        </div>
+    </body>
+</html>
