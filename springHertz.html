@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<title>SpringHertz</title>
+<script 
+src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js">
+</script>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/
+ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel ="stylesheet" href="sidebar.css">
+
+<link rel ="stylesheet" href="display.css">
+</head>
+
+<body>
+  <div class="head">
+  <h1 class="animate__animated animate__bounce">
+    Welcome To SpringHertz</h1>
+  
+  <div ng-app = "myApp" ng-controller="myCtrl">
+        
+    <p class="angu">{{time}}</p>
+</div>
+</div>
+<br>
+
+
+<div id="mySidebar" class="sidebar">
+  <a href="javascript:void()" class="closebtn" onclick="closeNav()">
+  x</a>
+  <a href="#">About</a>
+  <a href="#">Services</a>
+  <a href="#">Stocks</a>
+  <a href="bbc.com">Contact</a>
+  <a href = "#">Phones</a>
+</div>
+
+<div id="main">
+  
+  <div class="nav">
+    <a  href ="#">Products</a>
+    <a href= "about.html">About</a>
+    <a href= "contact.html">Contact</a>
+    <a class="active" href= "springHertz.html">Home</a>
+  </div>
+  <button type= "button" onclick="openNav()"><i class="fa fa-fw fa-bars"></i>
+  </button>  
+</div>
+<div class="slideshow-parent">
+<div class="slideLeft">
+  <div class="mySlides fade">
+    <img src="workstation2/laptop.jpg"width="400" height="190" >
+    </div>
+  
+  <div class="mySlides fade">
+    
+    <img src="workstation2/infinixnote7.jpg" width="400" height="190">
+    
+  </div>
+  
+  <div class="mySlides fade">
+    
+    <img src="workstation2/iphone12.png" width="400" height="190">
+    
+  </div>
+</div>
+<!--second slideShow-->
+  <div class="slideRight">
+    <div class="mySlides1 fade">
+      <img src="workstation2/laptop.jpg"width="400" height="190" >
+      </div>
+    
+    <div class="mySlides1 fade">
+      
+      <img src="workstation2/infinixnote7.jpg" width="400" height="190">
+      
+    </div>
+    
+    <div class="mySlides1 fade">
+      
+      <img src="workstation2/iphone12.png" width="400" height="190">
+      
+    </div>
+  </div>
+  </div>
+  
+  
+  <div style="text-align:center">
+    <span class="dot"></span> 
+    <span class="dot"></span> 
+    <span class="dot"></span> 
+  </div> 
+  <br>
+  
+  <!-- first image div-->
+  <div class = "hovparent">
+    <div class="tag"> <b>New</b></div>
+  <div class="display">
+    
+     <img src="workstation2/earbuds.jpg" style="width: 180px">
+     <p class="price"> Lenovo Earbuds 
+      $50</p>
+     <div class="hovimage">
+       <div class ="hov">
+       <img src="workstation2/sam-buds.jpg" >
+      </div>
+         <button type="button" class="bttn" >Add To Cart</button>
+    </div>
+  </div>
+  <div class="display">
+    
+    <img src="workstation2/itel-a16-plus (1).jpg" style="width: 180px" >
+    <p class="price"> Itel A16 Plus <br>
+       $70</p>
+    <div class="hovimage">
+      <div class ="hov">
+      <img src="workstation2/itel-a16-plus.jpg" >
+     </div>
+     
+     <button type="button" class="bttn">Add To Cart</button>
+   
+ </div>
+ </div>
+
+ <div class="display">
+    
+  <img src="workstation2/earbuds.jpg" style="width: 180px">
+  <p class="price"> Lenovo Earbuds 
+   $50</p>
+  <div class="hovimage">
+    <div class ="hov">
+    <img src="workstation2/sam-buds.jpg" >
+   </div>
+      <button type="button" class="bttn" >Add To Cart</button>
+ </div>
+</div>
+<div class="display">
+    
+  <img src="workstation2/infinix-smart-52-4g.jpg" style="width: 180px">
+  <p class="price">Infinix Smart 5 
+   $50</p>
+  <div class="hovimage">
+    <div class ="hov">
+    <img src="workstation2/infinix-smart-5-4g.jpg" >
+   </div>
+      <button type="button" class="bttn" >Add To Cart</button>
+ </div>
+</div>
+</div>
+<!--second image div-->
+<div class = "hovparent2">
+  <div class="tag"> <b>Accessories</b>
+  </div>
+<div class="display">
+  
+   <img src="workstation2/earbuds.jpg" style="width: 180px">
+   <p class="price"> Lenovo Earbuds 
+    $50</p>
+   <div class="hovimage">
+     <div class ="hov">
+     <img src="workstation2/sam-buds.jpg" >
+    </div>
+       <button type="button" class="bttn" >Add To Cart</button>
+  </div>
+</div>
+<div class="display">
+  
+  <img src="workstation2/itel-a16-plus (1).jpg" style="width: 180px" >
+  <p class="price"> Itel A16 Plus <br>
+     $70</p>
+  <div class="hovimage">
+    <div class ="hov">
+    <img src="workstation2/itel-a16-plus.jpg" >
+   </div>
+   
+   <button type="button" class="bttn">Add To Cart</button>
+ 
+</div>
+</div>
+
+<div class="display">
+  
+<img src="workstation2/earbuds.jpg" style="width: 180px">
+<p class="price"> Lenovo Earbuds 
+ $50</p>
+<div class="hovimage">
+  <div class ="hov">
+  <img src="workstation2/sam-buds.jpg" >
+ </div>
+    <button type="button" class="bttn" >Add To Cart</button>
+</div>
+</div>
+<div class="display">
+  
+<img src="workstation2/infinix-smart-52-4g.jpg" style="width: 180px">
+<p class="price">Infinix Smart 5 
+ $50</p>
+<div class="hovimage">
+  <div class ="hov">
+  <img src="workstation2/infinix-smart-5-4g.jpg" >
+ </div>
+    <button type="button" class="bttn" >Add To Cart</button>
+</div>
+</div>
+</div>
+<!--third image div-->
+<div class = "hovparent">
+  <div class="tag"> <b>Accessories</b></div>
+<div class="display">
+  
+   <img src="workstation2/earbuds.jpg" style="width: 180px">
+   <p class="price"> Lenovo Earbuds 
+    $50</p>
+   <div class="hovimage">
+     <div class ="hov">
+     <img src="workstation2/sam-buds.jpg" >
+    </div>
+       <button type="button" class="bttn" >Add To Cart</button>
+  </div>
+</div>
+<div class="display">
+  
+  <img src="workstation2/itel-a16-plus (1).jpg" style="width: 180px" >
+  <p class="price"> Itel A16 Plus <br>
+     $70</p>
+  <div class="hovimage">
+    <div class ="hov">
+    <img src="workstation2/itel-a16-plus.jpg" >
+   </div>
+   
+   <button type="button" class="bttn">Add To Cart</button>
+ 
+</div>
+</div>
+
+<div class="display">
+  
+<img src="workstation2/earbuds.jpg" style="width: 180px">
+<p class="price"> Lenovo Earbuds 
+ $50</p>
+<div class="hovimage">
+  <div class ="hov">
+  <img src="workstation2/sam-buds.jpg" >
+ </div>
+    <button type="button" class="bttn" >Add To Cart</button>
+</div>
+</div>
+<div class="display">
+  
+<img src="workstation2/infinix-smart-52-4g.jpg" style="width: 180px">
+<p class="price">Infinix Smart 5 
+ $50</p>
+<div class="hovimage">
+  <div class ="hov">
+  <img src="workstation2/infinix-smart-5-4g.jpg" >
+ </div>
+    <button type="button" class="bttn" >Add To Cart</button>
+</div>
+</div>
+</div>
+<!--fourth div image-->
+<div class = "hovparent2">
+  <div class="tag"> <b>New</b>
+  </div>
+<div class="display">
+  
+   <img src="workstation2/earbuds.jpg" style="width: 180px">
+   <p class="price"> Lenovo Earbuds 
+    $50</p>
+   <div class="hovimage">
+     <div class ="hov">
+     <img src="workstation2/sam-buds.jpg" >
+    </div>
+       <button type="button" class="bttn" >Add To Cart</button>
+  </div>
+</div>
+<div class="display">
+  
+  <img src="workstation2/itel-a16-plus (1).jpg" style="width: 180px" >
+  <p class="price"> Itel A16 Plus <br>
+     $70</p>
+  <div class="hovimage">
+    <div class ="hov">
+    <img src="workstation2/itel-a16-plus.jpg" >
+   </div>
+   
+   <button type="button" class="bttn">Add To Cart</button>
+ 
+</div>
+</div>
+
+<div class="display">
+  
+<img src="workstation2/earbuds.jpg" style="width: 180px">
+<p class="price"> Lenovo Earbuds 
+ $50</p>
+<div class="hovimage">
+  <div class ="hov">
+  <img src="workstation2/sam-buds.jpg" >
+ </div>
+    <button type="button" class="bttn" >Add To Cart</button>
+</div>
+</div>
+<div class="display">
+  
+<img src="workstation2/infinix-smart-52-4g.jpg" style="width: 180px">
+<p class="price">Infinix Smart 5 
+ $50</p>
+<div class="hovimage">
+  <div class ="hov">
+  <img src="workstation2/infinix-smart-5-4g.jpg" >
+ </div>
+    <button type="button" class="bttn" >Add To Cart</button>
+</div>
+</div>
+</div>
+  <footer>
+  
+<div class="footer">
+<div class="icon2">
+  <p>Follow us on</p>
+    <a href="#"><i class="fa fa-fw fa-facebook"></i></a>
+    <a href="#"><i class="fa fa-fw fa-twitter"></i></a>
+    <a href="#"><i class="fa fa-fw fa-instagram"></i></a>
+   <a href="#"><i class="fa fa-fw fa-snapchat-ghost"></i></a>
+   </div>
+   <div class ="icon"> 
+    <p>SpringHertz International<br><br>
+    25, Eke Market, Afikpo, Nigeria.<br><br>
+    E-mail: springherts@business.ng
+  </p>
+  </div>
+</footer>
+
+
+<script src ="spring.js"></script>
+
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="/__/firebase/8.2.9/firebase-app.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="/__/firebase/8.2.9/firebase-analytics.js"></script>
+
+<!-- Initialize Firebase -->
+<script src="/__/firebase/init.js"></script>
+
+</body>   
+</html>
+
