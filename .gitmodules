@@ -1,4 +1,11 @@
+<<<<<<< HEAD
+
 [submodule "global"]
 	path = global
 	url = https://github.com/minospeed007/global
 
+=======
+[submodule "global"]
+	path = global 
+	url = https://github.com/minospeed007/global
+>>>>>>> origin/springbranch

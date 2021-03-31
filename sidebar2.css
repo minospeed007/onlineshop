@@ -1,0 +1,33 @@
+
+
+
+.grid-wrapper{
+    
+
+    height: 250px;
+
+    background-color: gainsboro;
+   padding: 10px;
+}
+.item{
+    background-color:white;
+    padding:15px;
+      height: 250px;  
+      width: 100%; 
+       }
+        .buy{
+            background-color: #00022E;
+            color: white;
+            font-size: 12px;
+            border-radius: 25px;
+            padding:2px;
+        }
+        .buy:hover{
+            background-color: aqua;
+        }
+        .hot{
+            position: absolute;
+            top: 8px;
+            right:10px;
+            
+        }

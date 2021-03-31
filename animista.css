@@ -1,0 +1,86 @@
+/* ----------------------------------------------
+ mission div style
+/**
+ * ----------------------------------------
+ * animation scale-in-bottom
+ * ----------------------------------------
+ */
+@-webkit-keyframes scale-in-bottom {
+  0% {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+    -webkit-transform-origin: 50% 100%;
+            transform-origin: 50% 100%;
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    -webkit-transform-origin: 50% 100%;
+            transform-origin: 50% 100%;
+    opacity: 1;
+  }
+}
+@keyframes scale-in-bottom {
+  0% {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+    -webkit-transform-origin: 50% 100%;
+            transform-origin: 50% 100%;
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    -webkit-transform-origin: 50% 100%;
+            transform-origin: 50% 100%;
+    opacity: 1;
+  }
+}
+/* mission div class */
+.scale-in-bottom {
+    margin-top:20px;
+    padding:10px;
+    background-color: red;
+    height:450px;
+	-webkit-animation: scale-in-bottom 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	        animation: scale-in-bottom 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+.mission1{
+  
+    text-align: center;
+    text-decoration: underline 2px red;
+    color:rgb(95, 83, 83);
+    margin-bottom: 50px;
+    margin-top: 50px;
+    
+}
+.pics{
+    width: 100%;
+ 
+    margin-left:20px;
+}
+.pics,img{
+    padding:10px;
+    
+}
+.footabout{
+background-color: #000133;
+width: 100%;
+color:white;
+height: 300px;
+margin-left: 10px;
+
+}
+
+.aboutfoot2{
+margin-left: 10px;
+}
+
+
+
+
+
+
+
+

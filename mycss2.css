@@ -1,0 +1,116 @@
+
+  ul{
+    list-style-type:none;
+  }
+    #foot{
+      background-color:#333;
+      color: white;
+      height: 250px;
+    
+    }
+    .shift{
+    
+      margin: 30px;
+      padding: 40px;
+      font-size: large;
+    }
+    h2{text-align: center;}
+    input[type="text"]{
+      margin: 8px;
+      width: 200px;
+      text-align: left;
+    padding: 6px;
+    border-radius: 25px;
+    }
+    input[type="submit"]{
+      margin: 2px;
+      position: relative;left: 130px;
+      background-color: powderblue;
+      border-radius: 10px;
+      width: 90px;
+    }
+  body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+background-color: gainsboro;}
+  *{box-sizing:border-box;}
+  .img1{
+     float:left;
+    padding-right:30px;
+    display: inline;
+    margin-bottom: 30px;
+    margin-right: 60px;
+  }
+  .navbar {
+    width: 100%;
+    height: 70px ;
+    background-color: #555;
+    overflow: auto;
+  }
+  
+  .navbar a {
+    float: left;
+    padding: 15px;
+    color: white;
+    margin: 10px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+  .navbar a:hover {
+    background-color: rgba(168, 209, 53, 0.322);
+  }
+  
+  .active {
+    background-color: #4CAF50;
+  }
+  
+  @media screen and (max-width: 500px) {
+    .navbar a {
+      float: none;
+      display: block;
+    }
+  }
+  .image{
+  margin: 15px;  
+  width: auto;
+    height: 170px;
+  }
+  
+  li a{padding: 2px ;
+    margin: 1%;
+        width: 40px;
+        height: 50px;
+        float: left;
+        
+    
+      
+  }
+li{
+    margin:20px;
+    padding: 20px;
+  
+}
+  .parent{
+      width:auto;
+      margin: 3%;
+      height: 400px;
+      padding: 20px;
+      border: gainsboro;
+     background-color: ghostwhite; }
+      .firstchild{
+          background-color:aqua;
+          width: 250px;
+          float: left;
+          height: 350px;
+          margin-right: 3%;
+
+      }
+      .secondchild{
+          background-color:gainsboro ;
+          width: 600px;
+          height: 300px;
+          float: right;
+          margin: 3%;
+          padding: 4%;
+      }

@@ -1,0 +1,155 @@
+.sidebar {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: gray;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidebar a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color:white;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidebar a:hover {
+  color:powderblue;
+}
+
+.sidebar .closebtn {
+  position: absolute;
+  top: 0;
+  cursor:pointer;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+.openbtn {
+  font-size: 20px;
+  cursor: pointer;
+  background-color: #111;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  
+}
+
+.openbtn:hover {
+  background-color: gray;
+  
+}
+
+#main {
+  transition: margin-left .5s;
+  padding: 16px;
+  width: 100%;
+  background-color: black;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+  .sidebar {padding-top: 15px;}
+  .sidebar a {font-size: 18px;}
+}
+    #foot{
+      background-color:#333;
+      color: #ffffff;
+      height: 250px;
+    
+    }
+    .shift{
+      margin: 60px;
+      padding: 10px;
+    }
+    h{text-align: center;}
+    input[type="text"]{
+      margin: 8px;
+      width: 200px;
+      text-align: left;
+    padding: 6px;
+    border-radius: 25px;
+    }
+    input[type="submit"]{
+      margin: 2px;
+      position: relative;left: 130px;
+      background-color: powderblue;
+      border-radius: 10px;
+      width: 90px;
+    }
+  body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+background-color: gainsboro;}
+  *{box-sizing:border-box;}
+  .img1{
+     float:left;
+    padding: 30px;
+  
+    display: inline;
+  }
+  .navbar {
+    width: 50%;
+    
+    background-color: #555;
+    overflow-y: hidden;
+  }
+  
+  
+  
+  .navbar a:hover {
+    background-color: rgba(168, 209, 53, 0.322);
+  }
+  
+  .active {
+    background-color: blue;
+  }
+  
+  @media screen and (max-width: 500px) {
+    .navbar a {
+      float: none;
+      display: block;
+    }
+  }
+  .image{
+    margin:10px;
+  width: 100%;
+    height: 150px;
+  }
+    
+  .parent{
+      width:auto;
+      margin: 3%;
+      height: 900px;
+      padding: 20px;
+       background-color: ghostwhite;
+       }
+      
+       .firstchild{
+          background-color:aqua;
+          width: 250px;
+          float:left;
+          height: 350px;
+          
+
+      }
+      .firstchild a{
+        list-style-type:none;
+      padding: 14px 16px;
+      }
+      .secondchild{
+          background-color:gainsboro ;
+          width: 400px;
+          height: 300px;
+          float: right;
+          margin: 3%;
+          padding: 4%;
+      }
