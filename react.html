@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Tasks</title>
+<script>
+    
+
+    document.addEventListener('DOMContentLoaded', function(){
+
+        document.querySelector('form').onsubmit= function(){
+            fetch('http://api.exchangeratesapi.io/v1/latest?access_key=249ce1cba33d03540927fb966c45e15f&format=1 base=USD')
+.then(response=>response.json())
+.then(data=>{
+    const currency = document.queryselector('#currency').value;
+    const rate= data.rates[currency];
+    if(rate !== undefined){
+ document.querySelector('#result').innerHTML=`1 USD is Equal to ${rate.toFixed(2)} ${currency}.`;
+
+    }
+    else{
+        document.querySelector('#result').innerHTML="invalid currency.";
+    }
+        
+
+
+});
+return false;
+            
+    }
+});
+    </script>
+    </head>
+    <body>
+        <form>
+         <input id="currency"   placeholder='currency' type="text">
+         <input  type='submit' value="convert">
+         <div id="result">
+
+         </div>
+        
+        </body>
+        </html>

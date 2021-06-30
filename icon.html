@@ -1,22 +1,53 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Font Awesome Icons</title>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<script src="https://kit.fontawesome.com/a076d05399.js"></script>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/
-ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<link rel="stylesheet" href="mycss.css">
+  <title>SpringHertz</title>
+  <script 
+  src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js">
+  </script>
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/
+  ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel ="stylesheet" href="sidebar.css">
+  
+  <link rel ="stylesheet" href="display2.css">
+  
 </head>
 <body>
 
-<h1 > Welcome To SpringHertz International</h1>
-<div class = "navbar">
-    <a class="active" href= "#"><i class="fa fa-fw fa-home"></i>Home</a>
-    <a href="#"><i class="fa fa-fw fa-user"></i>User</a>
-    <a href="#"><i class="fa fa-fw fa-login"></i>Login</a>
-    <a href="#"><i class="fa fa-fw fa-search"></i>search</a>
-    <a href="#"><i class="fa fa-fw fa-facebook"></i>Facebook</a>
-</div>
+    <header>
+        <div class="container">
+          
+          <h1 class="animate__animated animate__bounce">
+            Welcome To SpringHertz</h1>
+          
+          <div ng-app = "myApp" ng-controller="myCtrl">
+                
+            <p class="angu">{{time}}</p>
+          </div>
+              <nav>
+                <img  class ="logo" src="/workstation2/brandcrowd-logo-5d59400c52.svg">
+              <input type="checkbox" class="check" id="toggle">
+              <label for ="toggle" class="hamburger " id ="hamburger"><i class="fa fa-fw fa-bars"></i>
+              </label>
+              <button type="button"class="btn">Request</button>
+            </nav>
+              <ul class="nav-ul">
+                <li class="nav-li"><a href="#">home</a></li>
+                <li class="nav-li"><a href="#">contact</a></li>
+                <li class="nav-li"><a href="#">blog</a></li>
+                <li class="nav-li"><a href="#">blog</a></li>
+                <li class="nav-li"><a href="#">about</a></li>
+                
+            </ul> 
+        
+          </div>
+      </header>
 </body>
 </html>

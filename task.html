@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Tasks</title>
+<script>
+    
+    document.addEventListener("DOMContentLoaded", function() {
+// Disable submit button by default//
+
+document.querySelector("#submit").disabled= true;
+
+    document.querySelector("#add-task").onkeyup = () =>{
+
+        if( document.querySelector("#add-task").value.lenght > 0){
+           
+            document.querySelector("#submit").disabled = false;
+
+        }
+        else{
+            document.querySelector("#submit").disabled = true;
+
+        }
+    }
+        document.querySelector("form").onsubmit= () =>{
+       const  tasks =   document.querySelector("#add-task").value;
+        
+       const li = document.createElement("li");
+       li.innerHTML= tasks;
+       document.querySelector("#task").append(li);
+       document.querySelector("#add-task").value ="";
+
+        return false;
+        }
+    });
+</script>
+</head>
+<body>
+    <h1> Todolists</h1>
+    <ul id="task">
+
+    </ul>
+    <form>
+        <input id ="add-task" placeholder="New task" type="text">
+        <input id="submit" type="submit">
+    </form>
+</body>

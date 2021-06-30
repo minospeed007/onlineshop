@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>flex img</title>
+        <style>
+            .discont{
+                display:flex;
+                width: 90%;
+                flex-wrap: wrap;
+                background-color: red;
+
+            }
+            .price{
+                margin:0;
+            }
+            
+            
+ @media only screen and (max-width:440px) {
+    
+            .discont{
+                flex-basis: 100%;
+            }
+    
+    
+    
+    
+ }
+ @media only screen and (min-width:640px) {
+    
+    .discont{
+        flex-basis: 50%;
+    }
+
+
+
+
+}
+ @media only screen and (min-width:1280px) {
+    
+    
+            .discont{
+                flex-basis: 30.333%;
+            }
+    
+    
+ }
+        </style>
+    </head>
+    <body>
+        <section>
+            <div class="discont">
+                <div class="display">                
+                <img class="image" src="workstation2/earbuds.jpg " style="width: 180px" />
+                <p class="price">$50</p>
+                </div>
+                <div class="display">                
+                    <img class="image" src="workstation2/earbuds.jpg " style="width: 180px" >
+                    </div>
+                    <div class="display">                
+                  <img class="image" src="workstation2/earbuds.jpg " style="width: 180px" >
+                        </div>
+                        <div class="display">                
+                       <img class="image" src="workstation2/earbuds.jpg " style="width: 180px" >
+                            </div>
+                            <div class="display">                
+                          <img class="image" src="workstation2/earbuds.jpg " style="width: 180px" >
+                             </div>
+                            <div class="display">                
+                          <img class="image" src="workstation2/earbuds.jpg " style="width: 180px" >
+                             </div>
+                
+                
+
+                
+            </div>
+        </section>
+    </body>
+</html>
